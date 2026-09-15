@@ -1,0 +1,116 @@
+/* =========================
+   Getting Started
+   ========================= */
+
+.intro-box {
+  margin: 2rem 0;
+  padding: 1.2rem 1.4rem;
+  border: 1px solid var(--sl-color-gray-5);
+  border-left: 3px solid var(--sl-color-accent);
+  border-radius: 0.6rem;
+  background: var(--sl-color-gray-6);
+}
+
+.intro-box strong {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: var(--sl-color-white);
+}
+
+.getting-started-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin: 1.5rem 0 2.5rem;
+}
+
+.getting-started-step {
+  display: grid;
+  grid-template-columns: 3rem 1fr;
+  gap: 1rem;
+  padding: 1rem 1.1rem;
+
+  border: 1px solid var(--sl-color-gray-5);
+  border-radius: 0.65rem;
+  background: var(--sl-color-gray-6);
+
+  transition:
+    border-color 0.15s ease,
+    transform 0.15s ease;
+}
+
+.getting-started-step:hover {
+  border-color: var(--sl-color-accent);
+  transform: translateY(-2px);
+}
+
+.getting-started-step h3 {
+  margin-top: 0;
+  margin-bottom: 0.35rem;
+}
+
+.getting-started-step p {
+  margin-bottom: 0.6rem;
+}
+
+.step-number {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 0.1rem;
+
+  color: var(--sl-color-accent);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.next-links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.next-links a {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+
+  padding: 1rem;
+
+  border: 1px solid var(--sl-color-gray-5);
+  border-radius: 0.6rem;
+
+  color: inherit;
+  text-decoration: none;
+
+  background: var(--sl-color-gray-6);
+
+  transition:
+    border-color 0.15s ease,
+    transform 0.15s ease;
+}
+
+.next-links a:hover {
+  border-color: var(--sl-color-accent);
+  transform: translateY(-2px);
+}
+
+.next-links strong {
+  color: var(--sl-color-white);
+}
+
+.next-links span {
+  color: var(--sl-color-gray-2);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 600px) {
+  .next-links {
+    grid-template-columns: 1fr;
+  }
+
+  .getting-started-step {
+    grid-template-columns: 2.5rem 1fr;
+  }
+}

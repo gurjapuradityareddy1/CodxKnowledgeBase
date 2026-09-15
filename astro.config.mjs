@@ -7,11 +7,13 @@ export default defineConfig({
 		starlight({
 			title: 'Codx',
 
+			customCss: ['./src/styles/custom.css'],
+
 			social: [
 				{
 					icon: 'github',
 					label: 'GitHub',
-					href: 'https://github.com/gurjapuradityareddy1/curved-conjunction',
+					href: 'https://github.com/gurjapuradityareddy1/CodxKnowledgeBase',
 				},
 			],
 
@@ -32,7 +34,7 @@ export default defineConfig({
 					items: [
 						{
 							autogenerate: {
-								directory: 'core-concepts',
+								directory: 'Core-concepts',
 							},
 						},
 					],
